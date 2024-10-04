@@ -56,3 +56,32 @@ function mencariNextPalindrome(num) {
 }
 num = 90
 console.log(`Angka terdekat dari ${num} adalah ${mencariNextPalindrome(num)}`)
+
+
+// Array
+let papan = [
+  ['.', '.', '.', '.', '.'],
+  ['.', '.', '.', '.', '.'],
+  ['.', '.', '.', '.', '.'],
+  ['.', '.', '.', '.', '.'],
+  ['.', '.', '.', '.', '.']
+  ]
+let posisiBarisRaja =  4
+let posisiKolomRaja = 2
+let posisiBarisBenteng = 3
+let posisiKolomBenteng = 2
+
+
+const raja = papan[posisiBarisRaja][posisiKolomRaja] = 'R'
+const benteng = papan[posisiBarisBenteng][posisiKolomBenteng] = 'B'
+let skak = false
+console.log(papan)
+for(let i = 0; i < papan.length; i++) {
+  if(papan[i][posisiKolomBenteng] === 'R') {
+    skak = true
+  } else if(papan[posisiBarisBenteng][i] === 'R'){
+    skak = true
+  }
+}
+
+console.log(skak)

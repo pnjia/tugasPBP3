@@ -84,4 +84,4 @@ for(let i = 0; i < papan.length; i++) {
   }
 }
 
-console.log(skak)
+console.log("Raja terkena skak: "+skak)
